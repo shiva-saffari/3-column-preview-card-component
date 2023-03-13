@@ -1,0 +1,141 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Lexend Deca", sans-serif;
+  line-height: 1;
+  font-weight: 500;
+  color: hsl(224, 23%, 55%);
+
+  background-color: hsl(0, 0%, 95%);
+  min-height: 98vh;
+  display: grid;
+  place-items: center;
+}
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/**************************/
+/* BELOW 1440px (desktop) */
+/**************************/
+@media (max-width: 144em) {
+  .section-column3-preview-card-component {
+    padding: 16rem 28rem;
+  }
+  .column3-preview-card-component {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-radius: 9px;
+    overflow: hidden;
+  }
+  .preview-column {
+    padding: 4rem;
+  }
+  .sedans-column {
+    background-color: hsl(31, 77%, 52%);
+  }
+  .suvs-column {
+    background-color: hsl(184, 100%, 22%);
+  }
+  .luxury-column {
+    background-color: hsl(179, 100%, 13%);
+  }
+  .img {
+    width: 5rem;
+    margin-bottom: 3rem;
+  }
+  .heading-primary {
+    font-family: "Big Shoulders Display", cursive;
+    color: hsl(0, 0%, 95%);
+    font-size: 3.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+  }
+  .text {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.4;
+    margin-bottom: 10rem;
+  }
+  .btn {
+    display: inline-block;
+
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: 1.2rem 2.4rem;
+    background-color: hsl(0, 0%, 95%);
+    border-radius: 50px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    font-family: inherit;
+    margin-bottom: 2rem;
+  }
+  .btn-sedans {
+    color: hsl(31, 77%, 52%);
+  }
+  .btn-suvs {
+    color: hsl(184, 100%, 22%);
+  }
+  .btn-luxury {
+    color: hsl(179, 100%, 13%);
+  }
+  .btn-sedans:hover {
+    color: hsla(0, 0%, 100%, 0.75);
+    border: 2px solid hsla(0, 0%, 100%, 0.75);
+    background-color: hsl(31, 77%, 52%);
+  }
+  .btn-suvs:hover {
+    color: hsla(0, 0%, 100%, 0.75);
+    border: 2px solid hsla(0, 0%, 100%, 0.75);
+    background-color: hsl(184, 100%, 22%);
+  }
+  .btn-luxury:hover {
+    color: hsla(0, 0%, 100%, 0.75);
+    border: 2px solid hsla(0, 0%, 100%, 0.75);
+    background-color: hsl(179, 100%, 13%);
+  }
+}
+
+/**************************/
+/* BELOW 375px (mobile) */
+/**************************/
+
+@media (max-width: 24em) {
+  .section-column3-preview-card-component {
+    padding: 8rem 2rem;
+    max-width: 34.5rem;
+  }
+  .column3-preview-card-component {
+    grid-template-columns: 1fr;
+  }
+  .preview-column {
+    padding: 4rem;
+  }
+  .heading-primary {
+    margin-bottom: 2rem;
+  }
+  .text {
+    margin-bottom: 2rem;
+  }
+  .btn {
+    margin-bottom: 0;
+  }
+}
